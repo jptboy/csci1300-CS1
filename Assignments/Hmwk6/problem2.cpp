@@ -1,20 +1,7 @@
-// Author: Ayush Khanal CS1300 Fall 2017
-// Recitation: 204- Chelsea Chandler
-// Cloud9 Workspace Editor Link: https://ide.c9.io/ayushkhanal/ayushkhanalcsci1300
-// Recitation 6 - Problem # 1
 #include <iostream>
+#include <fstream>
 using namespace std;
-/*
-Algorithim: Splits a string and puts its subsections into an array
-	1.Find how many seperators there are in the string and add 1 to it if there are more than 1 and store it in a variable that we will call foo
-	2.Repat foo times if there are actual seperators
-        1.Count till the seperator character or the end of the string and put all of the chars leading up to the seperator in the array when the seperator or the end of the string is reached
-        2.Increment the position within the string to make sure you arent at the end
-    3.The array is filled with the subsections of the long string
-Input paramters: empty array to fill with the subsections of a long string seperated by a character that is also an input. Size is also given for no reason
-Output:An array filled with the subsections of the string
-Return:An array filled with the subsections of the string
-*/
+
 int Split(string s, char a, string word[], int size)
 {
     int ctilchar = 0;//counts the number of chars until the seperator character
@@ -78,25 +65,32 @@ int Split(string s, char a, string word[], int size)
     return subs;// return the number of substrings put into the array
 }
 
+int ReadMisspelledWords(string fn, string misspelledWords[][2], int rows, int sind)
+{
+    string l = "";
+    string word[2];
+    ifstream fs(fn);
+    if(!fs.is_open()||sind > rows)
+    {
+        return -1;
+    }
+    if(fs.is_open() && sind < rows)
+    {
+        while(getline(fs,l))
+        {
+            Split(l, '\t', word, 2);
+            misspelledWords[sind][0] = word[0];
+            misspelledWords[sind][1] = word[1];
+            sind++;
+        }
+        fs.close();
+    }
+    return sind;
+}
+
 int main()
 {
-	int size = 4;
-	string word[size];
-	Split("herwr\tewrw\twerew\twerwer", '\t' ,word, size);//TEST CASE 1
-
-    for(int i=0; i<size; i++)
-    {
-        cout << word[i] << endl;
-    }
-
-    int size1 = 5;
-	string word1[size1];
-	Split("sadfads,asdfas,dddff,ererere,adasdfas ", ',' ,word1, size1);//TEST CASE 2
-
-    for(int i=0; i<size1; i++)
-    {
-        cout << word1[i] << endl;
-    }
-
-	return 0;
+    string ms[600][2];
+    cout << ReadMisspelledWords("MISSPELLED.txt",ms, 600, 526);
+    return 0;
 }

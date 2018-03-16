@@ -1,9 +1,65 @@
 #include <iostream>
 #include "User.h"
+#include "Book.h"
 using namespace std;
 
+
 /*
-If you dont want to do this by including the other files and stuff you can just get rid of include "User.h" and paste this whole comment up here except for this sentence.
+//For problem1 moodle pasting
+class Book
+{
+    public:
+        Book();
+        Book(string tit, string auth);
+        string getTitle();
+        void setTitle(string x);
+        string getAuthor();
+        void setAuthor(string y);
+        ~Book();
+    private:
+        string title;
+        string author;
+};
+
+Book::Book()
+{
+    title = "NONE";
+    author = "NONE";
+}
+
+Book::Book(string tit, string auth)
+{
+    title = tit;
+    author = auth;
+};
+string Book::getTitle()
+{
+    return title;
+}
+
+void Book::setTitle(string x)
+{
+    title = x;
+}
+
+string Book::getAuthor()
+{
+    return author;
+}
+
+void Book::setAuthor(string y)
+{
+    author = y;
+}
+Book::~Book()
+{
+    title = "NONE";
+    author = "NONE";
+}
+*/
+
+/*
+//For problem 2 moodle pasting
 class User
 {
     public:
@@ -93,7 +149,12 @@ User::~User()
 */
 int main()
 {
-    	
+
+    Book cs_textbook("Problem Solving with C++ (9th Edition)", "Walter  Savitch");
+    cout << cs_textbook.getAuthor() << endl;
+    Book fakebook("Fake", "Faker  Fakest");
+    cs_textbook.setAuthor("Vipra Gupta");
+
     //test setRatingsAt, getRatingsAt
     int user1_ratings[] = {0, 1, 3, -1, 0, -5, -3};
     User user1("ayush", user1_ratings, 7);

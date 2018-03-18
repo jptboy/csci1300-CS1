@@ -1,7 +1,14 @@
+// Author: Ayush Khanal CS1300 Fall 2017
+// Recitation: 204- Chelsea Chandler
+// Cloud9 Workspace Editor Link: https://ide.c9.io/ayushkhanal/ayushkhanalcsci1300
+// Homework 7 part 1, all problems
 #include <iostream>
 #include "User.h"
 #include "Book.h"
 using namespace std;
+
+//I did this with multiple files at first but you can uncomment the next block comment and comment out the header files and everything will still work
+
 /*
 class Book
 {

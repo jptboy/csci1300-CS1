@@ -2,10 +2,7 @@
 #include "User.h"
 #include "Book.h"
 using namespace std;
-
-
 /*
-//For problem1 moodle pasting
 class Book
 {
     public:
@@ -25,7 +22,7 @@ Book::Book()
 {
     title = "NONE";
     author = "NONE";
-}
+};
 
 Book::Book(string tit, string auth)
 {
@@ -56,10 +53,6 @@ Book::~Book()
     title = "NONE";
     author = "NONE";
 }
-*/
-
-/*
-//For problem 2 moodle pasting
 class User
 {
     public:
@@ -149,15 +142,21 @@ User::~User()
 */
 int main()
 {
-
+    //test case 1 for problem 1
     Book cs_textbook("Problem Solving with C++ (9th Edition)", "Walter  Savitch");
     cout << cs_textbook.getAuthor() << endl;
+    //test case 2 for problem 1
     Book fakebook("Fake", "Faker  Fakest");
     cs_textbook.setAuthor("Vipra Gupta");
 
-    //test setRatingsAt, getRatingsAt
+    //test case 1 for problem 2
     int user1_ratings[] = {0, 1, 3, -1, 0, -5, -3};
     User user1("ayush", user1_ratings, 7);
     cout << user1.setRatingAt(3, -10000) << endl;
+    //test case 2 for problem2
+    int user2_ratings[] = {0, 3, 3, -5, 2, -3, -3};
+    User user2("chiekeef", user2_ratings, 7);
+    cout << user2.getRatingAt(3) << endl;
+    
     return 0;
 }

@@ -14,6 +14,14 @@ Book::Book()
 
 Book::Book(string tit, string auth)
 {
+    for(int i=0; i<tit.length(); i++)
+    {
+        tit[i] = tolower(tit[i]);
+    }
+    for(int i=0; i<auth.length(); i++)
+    {
+        auth[i] = tolower(auth[i]);
+    }
     title = tit;
     author = auth;
 };
@@ -24,6 +32,10 @@ string Book::getTitle()
 
 void Book::setTitle(string x)
 {
+    for(int i=0; i<x.length(); i++)
+    {
+        x[i] = tolower(x[i]);
+    }
     title = x;
 }
 
@@ -34,6 +46,10 @@ string Book::getAuthor()
 
 void Book::setAuthor(string y)
 {
+    for(int i=0; i<y.length(); i++)
+    {
+        y[i] = tolower(y[i]);
+    }
     author = y;
 }
 Book::~Book()

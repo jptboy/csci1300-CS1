@@ -6,7 +6,7 @@
 #define USER_H
 #include <iostream>
 using namespace std;
-
+#include <string>
 class User
 {
     public:

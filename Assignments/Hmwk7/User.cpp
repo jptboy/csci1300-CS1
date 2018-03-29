@@ -14,6 +14,10 @@ User::User()
 
 User::User(string new_username, int new_ratings[], int new_numratings)
 {
+    for(int i=0; i<new_username.length(); i++)
+    {
+        new_username[i] = tolower(new_username[i]);
+    }
     username = new_username;
     for(int i=0; i<new_numratings;i++)
     {
@@ -50,7 +54,7 @@ int User::setRatingAt(int pos, int new_rating)
     if((new_rating >= -5 && new_rating <= 3) || new_rating == 5)
     {    
         ratings[pos] = new_rating;
-        cout << "Success!" << endl;
+        //cout << "Success!" << endl;
         return 0;
     }
 

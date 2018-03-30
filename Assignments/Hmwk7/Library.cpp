@@ -187,6 +187,15 @@ void Library::login()
         numusers++;
     } 
     cout << "Welcome to the Library, " <<logUsern << endl;
+    for(int i=0; i<numusers; i++)
+    {
+        if(users[i].getName() == newLogUsern || users[i].getName() == logUsern)//the strings were different lengths
+        {
+            //cout << "@@@@@@@@@@" << endl;
+            isinlist=true;
+            useridx = i;
+        }
+    }
     menu(useridx);
 
 
@@ -439,7 +448,8 @@ void Library::recommend(int whois)
 
 void Library::quit()
 {
-    ofstream writeData("ratings_new.txt");
+    //ofstream writeData("ratings_new.txt");
+    ofstream writeData("ratings.txt");
     if(!writeData.is_open())
     {
         cout << "Error" << endl;//i think this function works

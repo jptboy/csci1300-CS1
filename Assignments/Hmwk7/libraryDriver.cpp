@@ -9,8 +9,8 @@
 using namespace std;
 int main()
 {
-    Library killmenow;
-    killmenow.login();
-    killmenow.test();
+    Library lib;
+    lib.login();
+    lib.test();
     return 0;
 }

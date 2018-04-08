@@ -1,0 +1,27 @@
+Enter a positive integer or press q to quit:
+2
+Enter a positive integer or press q to quit:
+1
+Enter a positive integer or press q to quit:
+2
+Enter a positive integer or press q to quit:
+asdf
+Please enter a valid positive integer or press q to quit:
+-3
+Please enter a POSITIVE integer:
+m
+Please enter a valid positive integer or press q to quit:
+109
+Enter a positive integer or press q to quit:
+47
+Enter a positive integer or press q to quit:
+63
+Enter a positive integer or press q to quit:
+5
+Enter a positive integer or press q to quit:
+143
+Enter a positive integer or press q to quit:
+q
+The elements in the vector are: 1 2 109 143
+Max = 143
+Min = 1

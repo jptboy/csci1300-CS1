@@ -1,0 +1,27 @@
+Outputs:
+Please enter 5 planet names and their respective radii in the format below:
+<PlanetName>, <planetRadius>
+
+Inputs:
+russia, 5
+usa, 6
+japan, 6.7
+neptune, 1234.12341
+pandora, 123,321
+
+Outputs:
+This is planet 0 with name: russia and radius: 5
+This is planet 1 with name: usa and radius: 6
+This is planet 2 with name: japan and radius: 6.7
+This is planet 3 with name: neptune and radius: 1234.12
+This is planet 4 with name: pandora and radius: 123
+The radius difference between planet russia and planet usa is 1.
+The radius difference between planet russia and planet japan is 1.7.
+The radius difference between planet russia and planet neptune is 1229.12.
+The radius difference between planet russia and planet pandora is 118.
+The radius difference between planet usa and planet japan is 0.7.
+The radius difference between planet usa and planet neptune is 1228.12.
+The radius difference between planet usa and planet pandora is 117.
+The radius difference between planet japan and planet neptune is 1227.42.
+The radius difference between planet japan and planet pandora is 116.3.
+The radius difference between planet neptune and planet pandora is 1111.12.

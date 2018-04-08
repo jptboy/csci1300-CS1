@@ -1,0 +1,14 @@
+###the reason everything has names including clothes is because it simulates UPC numbers and is less cumbersome###
+
+
+-food: name, price, quantity, taste, time till expiration, ethnic origin
+pizza, 5.23, 1234, salty, 6, italian
+
+-electronics: name, price, quantity, type, warranty, manufacturer
+uhdsupercooltv, 523, 54, tv, 5, sony
+
+-clothing: name, price, quantity, color, size, type
+ultrarain running hoodie, 50, 500, red, 14, hoodie
+
+-unknowns: name, price, quantity
+supercleann, spray, 5, 5000

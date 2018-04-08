@@ -1,0 +1,2 @@
+-name bank value favorite_items_seperatedbycommas 
+Joe 1000 pizza,hoodies,tv,basil pesto

@@ -3,11 +3,11 @@
 #include "Item.h"
 #include <iostream>
 using namespace std;
-class Electronic: public Item, protected Item
+class Electronic: public Item
 {
     public:
         Electronic();
-        Electronic(string newBrand, int newWarrantyLength, string newDeviceType);
+        Electronic::Electronic(string newBrand, int newWarrantyLength, string newDeviceType, double newPrice, double newQuantity);
 
         string getBrand();
         int getWarrantyLength();

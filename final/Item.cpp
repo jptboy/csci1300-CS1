@@ -16,19 +16,19 @@ Item::Item(double newPrice, double newQuantity)
     quantity=newQuantity;
 };
 
-double getPrice()
+double Item::getPrice()
 {
     return price;
 }
-double getQuantity()
+double Item::getQuantity()
 {
     return quantity;
 }
-void setPrice(double newPrice)
+void Item::setPrice(double newPrice)
 {
     price=newPrice;
 }
-void setQuantity(double newQuantity)
+void Item::setQuantity(double newQuantity)
 {
     quantity=newQuantity;
 }

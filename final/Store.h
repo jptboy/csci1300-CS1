@@ -15,6 +15,12 @@ class Store
         void searchUsers();
         void buyItem();
         void addItemtoFavorite();
+        void shopLift();
+        void quit();
+        void viewBalance();
+        void getReccomendations();
+        void requestOrder();
+        void viewItems();
         ~Store();
     private:
         vector <Customer> customers;

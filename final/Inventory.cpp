@@ -5,7 +5,7 @@ using namespace std;
 
 Inventory::Inventory()
 {
-    loadInventory();
+    loadInventory("inventoryfile.txt");
 };
 
 void Inventory::loadInventory(string inventoryFile)

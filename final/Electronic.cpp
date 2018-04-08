@@ -20,28 +20,28 @@ Electronic::Electronic(string newBrand, int newWarrantyLength, string newDeviceT
     quantity=newQuantity;
 };
 
-string getType()
+string Electronic::getBrand()
 {
-    return type;
+    return brand;
 }
-string getColor()
+int Electronic::getWarrantyLength()
 {
-    return color;
+    return warrantyLength;
 }
-int getSize()
+string Electronic::getdeviceType()
 {
-    return size;
+    return deviceType;
 }
 
-void setType(string new_Type)
+void Electronic::setBrand(string newBrand)
 {
     brand=newBrand;
 }
-void setColor(string new_Color)
+void Electronic::setWarrantyLength(int newWarrantyLength)
 {
     warrantyLength=newWarrantyLength;
 }
-void setSize(int new_Size)
+void Electronic::setDeviceType(string newDeviceType)
 {
     deviceType=newDeviceType;
 }

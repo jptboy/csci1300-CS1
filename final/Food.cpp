@@ -22,28 +22,28 @@ Food::Food(string newTaste, int newExpiration, string newEthnicOrigin, double ne
 };
 
 
-string getTaste()
+string Food::getTaste()
 {
     return taste;
 }
-int getExpiration()
+int Food::getExpiration()
 {
     return expiration;
 }
-string getEthnicOrigin()
+string Food::getEthnicOrigin()
 {
     return ethnicOrigin;
 }
 
-void setTaste(string newTaste)
+void Food::setTaste(string newTaste)
 {
     taste=newTaste;
 }
-void setExpiration(int newExpiration)
+void Food::setExpiration(int newExpiration)
 {
     expiration=newExpiration;
 }
-void setEthnicOrigin(string newEthnicOrigin)
+void Food::setEthnicOrigin(string newEthnicOrigin)
 {
     ethnicOrigin=newEthnicOrigin;
 }

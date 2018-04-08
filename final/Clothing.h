@@ -2,12 +2,12 @@
 #define CLOTHING_H
 #include <iostream>
 #include "Item.h"
-class Clothing: public Item, protected Item
+class Clothing: public Item
 {
     public:
     
         Clothing();
-        Clothing(string new_Type, int new_Size, string new_Color);
+        Clothing(string new_Type, int new_Size, string new_Color, double newPrice, double newQuantity);
         
         string getType();
         string getColor();

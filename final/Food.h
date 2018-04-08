@@ -3,11 +3,11 @@
 #include "Item.h"
 #include <iostream>
 using namespace std;
-class Food:public Item, protected Item
+class Food:public Item
 {
     public:
         Food();
-        Food(string newTaste, int newExpiration, string newEthnicOrigin);
+        Food(string newTaste, int newExpiration, string newEthnicOrigin, double newPrice, double newQuantity);
 
         string getTaste();
         int getExpiration();

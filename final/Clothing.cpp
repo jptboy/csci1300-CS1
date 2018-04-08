@@ -21,30 +21,30 @@ Clothing::Clothing(string new_Type, int new_Size, string new_Color, double newPr
     quantity=newQuantity;
 };
 
-string getType()
+string Clothing::getType()
 {
     return type;
 }
-string getColor()
+string Clothing::getColor()
 {
     return color;
 }
-int getSize()
+int Clothing::getSize()
 {
     return size;
 }
 
-void setType(string new_Type)
+void Clothing::setType(string new_Type)
 {
     type = new_Type;
 }
-void setColor(string new_Color)
-{
-    size=new_Size;
-}
-void setSize(int new_Size)
+void Clothing::setColor(string new_Color)
 {
     color=new_Color;
+}
+void Clothing::Clothing::setSize(int new_Size)
+{
+    size=new_Size;
 }
 Clothing::~Clothing()
 {

@@ -6,9 +6,9 @@ using namespace std;
 Customer::Customer()
 {
     bankVal = -0.01;
-    name="NONE"
-}
-Customer::Customer(double newName, double newBankVal)
+    name="NONE";
+};
+Customer::Customer(string newName, double newBankVal)
 {
     bankVal = newBankVal;
     name= newName;
@@ -19,11 +19,11 @@ double Customer::getBankVal()
 }
 void Customer::addMoney(double addedMoney)
 {
-    bankval+=addedMoney;
+    bankVal+=addedMoney;
 }
 
 Customer::~Customer()
 {
     bankVal = -0.01;
-    name="NONE"
-}
+    name="NONE";
+};

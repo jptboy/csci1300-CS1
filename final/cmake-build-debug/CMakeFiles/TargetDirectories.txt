@@ -1,2 +1,0 @@
-/home/jptboy/Documents/CS1300/final/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/jptboy/Documents/CS1300/final/cmake-build-debug/CMakeFiles/edit_cache.dir
